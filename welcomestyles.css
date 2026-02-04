@@ -12,14 +12,10 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #f8f8f8;
-    /* background:url(./Images/Book_Library.jpg);
-    background-size: cover;
-    background-position: center; */
 }
 body div:nth-child(1){
     flex: 1;
     height: 100vh;
-    /* background-color: blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +30,6 @@ body div:nth-child(1) img{
 body div:nth-child(2){
     flex: 1;
     height: 100vh;
-    /* background-color: violet; */
     display: flex;
     flex-direction: column;
     justify-content: center;
