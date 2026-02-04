@@ -1,0 +1,81 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body{
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    /* background:url(./Images/Book_Library.jpg);
+    background-size: cover;
+    background-position: center; */
+}
+body div:nth-child(1){
+    flex: 1;
+    height: 100vh;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+body div:nth-child(1) img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+body div:nth-child(2){
+    flex: 1;
+    height: 100vh;
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+body div:nth-child(2) h1{
+    font-size: xx-large;
+    font-weight: 900;
+    text-align: center;
+    color: #2e5e99;
+    line-height: 35px;
+}
+body div:nth-child(2) a{
+    text-decoration: none;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+}
+body div:nth-child(2) a button{
+    background-color: #2e5e99;
+    border: none;
+    border-radius: 20px;
+    color: #f8f8f8;
+    width: inherit;
+    height: 100%;
+    width: 50%;
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        flex-direction: column;
+        padding: 20px 0px;
+        gap: 30px;
+        max-height: 250vh;
+    }
+    body div:nth-child(1), body div:nth-child(2){
+        width: 100%;
+        height: 50vh;
+    }
+
+}
