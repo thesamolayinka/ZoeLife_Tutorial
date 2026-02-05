@@ -85,9 +85,9 @@ header nav{
     width: 100%;
     height: 10vh;
     background-color: var(--bg1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    /* justify-content: center;
+    align-items: center; */
     color: white;
     padding: 0px 20px;
 }
@@ -98,9 +98,6 @@ header nav ul{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    list-style: none;
-    /* background-color: aliceblue; */
-    gap: 20px;
 }
 header nav ul li{
     width: 10%;
@@ -129,15 +126,26 @@ header nav ul li a:hover{
 }
 @media screen and (max-width: 1000px){
     header .Logo_Name{
-        flex-direction: column;
-    }
-    header .Logo_Name div:nth-child(1){
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
+        height: 15vh;
     }
     header .Logo_Name div:nth-child(2){
         display: none;
+    }
+    header .Logo_Name div:nth-child(1){
+        justify-content: center;
+        align-items: center;
+    }
+    header nav, header nav ul{
+        height: 20vh;
+    }
+    header nav ul{
+        flex-wrap: wrap;
+    }
+    header nav ul li{
+        width: 30%;
+        height: 30%;
+    }
+    header nav ul li a:hover{
+        height: 100%;
     }
 }
