@@ -13,6 +13,7 @@
     --bg2: #3654f9;
     --bg3: black;
     --bg4: white;
+    --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 body{
     max-width: 100vw;
@@ -20,7 +21,6 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #f8f8f8;
-    justify-content: space-between;
 }
 header{
     width: 100%;
@@ -59,8 +59,8 @@ header .Logo_Name div:nth-child(2){
     align-items: center;
 }
 header .Logo_Name div:nth-child(2) a{
-    width: 100%;
-    height: 100%;
+    width: 35%;
+    height: 60%;
     text-decoration: none;
     display: flex;
     justify-content: end;
@@ -69,8 +69,8 @@ header .Logo_Name div:nth-child(2) a{
 header .Logo_Name div:nth-child(2) a button{
     border: none;
     background-color: var(--bg1);
-    width: 35%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
     color: white;
     font-size: smaller;
@@ -131,6 +131,86 @@ main{
     width: 100%;
     height: auto;
 }
+main .About_Section{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    /* background-color: violet; */
+}
+main .About_Section h1{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+main .About_Section div{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .About_Section div div:nth-child(1){
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* background-color: green; */
+}
+main .About_Section div div:nth-child(1) h1{
+    height: auto;
+    font-size: x-large;
+    font-weight: 600;
+}
+main .About_Section div div:nth-child(1) p{
+    text-align: center;
+    font-size: medium;
+    font-weight: 400;
+}
+main .About_Section div div:nth-child(1) a{
+    width: 50%;
+    height: 13%;
+    text-decoration: none;
+}
+main .About_Section div div:nth-child(1) a button{
+    border: none;
+    background-color: var(--bg1);
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    color: var(--font3);
+    font-size: smaller;
+    font-weight: 400;
+}
+main .About_Section div div:nth-child(1) a button:hover{
+    cursor: pointer;
+    background-color: var(--bg2);
+    transition: all ease-in-out 0.3s;
+}
+main .About_Section div div:nth-child(2){
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: purple; */
+}
+main .About_Section div div:nth-child(2) img{
+    width: 58%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
 footer{
     width: 100%;
     height: 12vh;
@@ -140,20 +220,19 @@ footer{
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
     padding: 10px 20px;
 }
 footer div:nth-child(1){
     flex: 1;
     height: 100%;
     display: flex;
-    /* background-color: red; */
     justify-content: end;
     align-items: center;
 }
 footer div:nth-child(1) a{
-    width: 100%;
-    height: 100%;
+    width: 30%;
+    height: 60%;
     text-decoration: none;
     display: flex;
     justify-content: end;
@@ -169,12 +248,15 @@ footer div:nth-child(1) a button:hover{
 footer div:nth-child(1) a button{
     border: none;
     background-color: var(--bg4);
-    width: 30%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
     color: var(--font4);
     font-size: smaller;
     font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 footer div:nth-child(2){
     flex: 1;
@@ -186,12 +268,12 @@ footer div:nth-child(2){
     gap: 3px;
 }
 footer div:nth-child(2) p{
-    font-size: xx-small;
-    font-weight: 200;
+    font-size: x-small;
+    font-weight: 400;
 }
 @media screen and (max-width: 1000px){
     header .Logo_Name{
-        display: block;
+        /* display: block; */
         height: 15vh;
     }
     header .Logo_Name div:nth-child(1){
@@ -214,21 +296,42 @@ footer div:nth-child(2) p{
     header nav ul li a:hover{
         height: 100%;
     }
+    main .About_Section{
+        height: auto;
+        gap: 5px;
+    }
+    main .About_Section h1{
+        height: 5vh;
+        /* background-color: green; */
+    }
+    main .About_Section div{
+        height: auto;
+        flex-direction: column-reverse;
+        gap: 20px;
+        /* background-color: red; */
+    }
+    main .About_Section div div:nth-child(1), main .About_Section div div:nth-child(2){
+        height: auto;
+        /* background-color: purple; */
+        justify-content: start;
+    }
+    main .About_Section div div:nth-child(2) img{
+        width: 70%;
+        height: 60%;
+    }
+    main .About_Section div div:nth-child(1) p{
+        font-size: small;
+        line-height: 20px;
+    }
+    main .About_Section div div:nth-child(1) a, main .About_Section div div:nth-child(1) a button{
+        height: 40px;
+    }
     footer{
         flex-direction: column;
         height: 30vh;
+        align-items: start;
     }
-    footer div:nth-child(1){
-        width: 100%;
-    }
-    footer div:nth-child(1) a{
-        justify-content: center;
-        align-items: center;
-    }
-    footer div:nth-child(1) a button{
-        width: 100%;
-    }
-    footer div:nth-child(2){
+    footer div:nth-child(1), footer div:nth-child(1) a{
         width: 100%;
     }
 }
