@@ -12,7 +12,7 @@
     --bg1: #2e42b4;
     --bg2: #3654f9;
     --bg3: black;
-    --bg4: white;
+    --bg4: #f8f8f8;
     --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 body{
@@ -133,11 +133,12 @@ main{
 }
 main .About_Section{
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     padding: 0px 20px;
     /* background-color: violet; */
+    margin: 10px 0px;
 }
 main .About_Section h1{
     width: 100%;
@@ -210,6 +211,133 @@ main .About_Section div div:nth-child(2) img{
     height: 100%;
     border-radius: 20px;
     box-shadow: var(--shadow);
+}
+main .Class_Section{
+    width: 100%;
+    height: auto;
+    background-color: var(--bg4);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 10px;
+}
+main .Class_Section h1{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .Class_Section div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main .Class_Section div .Class_Box{
+    width: 25%;
+    height: auto;
+    box-shadow: var(--shadow);
+    background-color: var(--bg1);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 10px;
+    gap: 10px;
+}
+main .Class_Section div .Class_Box div:nth-child(1){
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .Class_Section div .Class_Box div:nth-child(1) img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+main .Class_Section div .Class_Box div:nth-child(2){
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--font3);
+    gap: 25px;
+}
+main .Class_Section div .Class_Box div:nth-child(2) div:nth-child(1){
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+main .Class_Section div .Class_Box div:nth-child(2) div:nth-child(1) h1{
+    font-size: large;
+    font-weight: 600;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+main .Class_Section div .Class_Box div:nth-child(2) div:nth-child(1) p{
+    font-size: smaller;
+    text-align: left;
+    line-height: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+main .Class_Section div .Class_Box div:nth-child(2) div{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+    align-items: flex-start;
+}
+main .Class_Section div .Class_Box div:nth-child(2) div h2{
+    font-size: small;
+    font-weight: 600;
+}
+main .Class_Section div .Class_Box div:nth-child(2) div h2 span{
+    font-size: small;
+    font-weight: 500;
+}
+main .Class_Section div .Class_Box div:nth-child(2) div:nth-child(2){
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+main .Class_Section div .Class_Box div:nth-child(2) div:nth-child(2) a{
+    width: 100%;
+    height: 35px;
+    text-decoration: none;
+}
+main .Class_Section div .Class_Box div:nth-child(2) div:nth-child(2) a button{
+    border: 1px solid var(--bg4);
+    background-color: inherit;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    color: var(--font3);
+    font-size: smaller;
+    font-weight: 300;
+}
+main .Class_Section div .Class_Box div:nth-child(2) div:nth-child(2) a button:hover{
+    cursor: pointer;
+    border: none;
+    background-color: var(--bg2);
+    transition: all ease-in-out 0.3s;
 }
 footer{
     width: 100%;
@@ -298,22 +426,15 @@ footer div:nth-child(2) p{
     }
     main .About_Section{
         height: auto;
-        gap: 5px;
-    }
-    main .About_Section h1{
-        height: 5vh;
-        /* background-color: green; */
+        gap: 10px;
     }
     main .About_Section div{
         height: auto;
         flex-direction: column-reverse;
         gap: 20px;
-        /* background-color: red; */
     }
     main .About_Section div div:nth-child(1), main .About_Section div div:nth-child(2){
         height: auto;
-        /* background-color: purple; */
-        justify-content: start;
     }
     main .About_Section div div:nth-child(2) img{
         width: 70%;
@@ -324,7 +445,16 @@ footer div:nth-child(2) p{
         line-height: 20px;
     }
     main .About_Section div div:nth-child(1) a, main .About_Section div div:nth-child(1) a button{
-        height: 40px;
+        height: 45px;
+        width: auto;
+        padding: 0% 25px;
+    }
+    main .Class_Section div{
+        flex-direction: column;
+        gap: 20px;
+    }
+    main .Class_Section div .Class_Box{
+        width: 95%;
     }
     footer{
         flex-direction: column;
