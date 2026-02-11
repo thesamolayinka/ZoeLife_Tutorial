@@ -130,6 +130,7 @@ main{
     align-items: center;
     width: 100%;
     height: auto;
+    gap: 25px;
 }
 main .About_Section{
     width: 100%;
@@ -219,7 +220,7 @@ main .Class_Section{
     display: flex;
     flex-direction: column;
     padding: 20px 20px;
-    gap: 10px;
+    gap: 25px;
 }
 main .Class_Section h1{
     width: 100%;
@@ -339,6 +340,106 @@ main .Class_Section div .Class_Box div:nth-child(2) div:nth-child(2) a button:ho
     background-color: var(--bg2);
     transition: all ease-in-out 0.3s;
 }
+main .Class_Section .SeeAllClass{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .Class_Section .SeeAllClass a{
+    width: 30%;
+    height: 60%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .Class_Section .SeeAllClass a button{
+    border: none;
+    background-color: var(--bg1);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    color: var(--font3);
+    font-size: smaller;
+    font-weight: 300;
+}
+main .Class_Section .SeeAllClass a button:hover{
+    cursor: pointer;
+    background-color: var(--bg2);
+    transition: all ease-in-out 0.3s;
+}
+main .Testimony_Section{
+    width: 100%;
+    height: auto;
+    background-color: var(--bg4);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 25px;
+    /* background-color: #3654f9; */
+}
+main .Testimony_Section h1{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+main .Testimony_Section .Testimony_Images{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    border: 2px solid var(--bg1);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+main .Testimony_Section .Testimony_Images img{
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+main .Testimony_Section .SeeAllTestimonies{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .Testimony_Section .SeeAllTestimonies a{
+    width: auto;
+    height: 60%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+main .Testimony_Section .SeeAllTestimonies a button{
+    border: none;
+    background-color: var(--bg1);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    color: var(--font3);
+    font-size: smaller;
+    font-weight: 300;
+    padding: 0px 20px;
+}
+main .Testimony_Section .SeeAllTestimonies a button:hover{
+    cursor: pointer;
+    background-color: var(--bg2);
+    transition: all ease-in-out 0.3s;
+}
 footer{
     width: 100%;
     height: 12vh;
@@ -455,6 +556,10 @@ footer div:nth-child(2) p{
     }
     main .Class_Section div .Class_Box{
         width: 95%;
+    }
+    main .Class_Section .SeeAllClass a{
+        width: 70%;
+        height: 70%;
     }
     footer{
         flex-direction: column;
