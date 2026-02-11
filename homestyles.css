@@ -144,7 +144,7 @@ main hr{
 }
 main .About_Section{
     width: 100%;
-    height: 70%;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     padding: 0px 20px;
@@ -610,7 +610,7 @@ footer div:nth-child(2) p{
         height: 100%;
     }
     main .About_Section{
-        min-height:  auto;
+        height:  auto;
         gap: 10px;
     }
     main .About_Section div{
