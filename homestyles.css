@@ -183,6 +183,7 @@ main .About_Section div div:nth-child(1) h1{
     height: auto;
     font-size: x-large;
     font-weight: 600;
+    text-align: center;
 }
 main .About_Section div div:nth-child(1) p{
     text-align: center;
@@ -218,7 +219,7 @@ main .About_Section div div:nth-child(2){
     /* background-color: purple; */
 }
 main .About_Section div div:nth-child(2) img{
-    width: 58%;
+    width: 65%;
     height: 100%;
     border-radius: 20px;
     box-shadow: var(--shadow);
@@ -259,7 +260,7 @@ main .Class_Section div .Class_Box{
     justify-content: start;
     align-items: center;
     border-radius: 10px;
-    padding: 10px 10px;
+    padding: 20px 15px;
     gap: 10px;
 }
 main .Class_Section div .Class_Box div:nth-child(1){
@@ -298,6 +299,7 @@ main .Class_Section div .Class_Box div:nth-child(2) div:nth-child(1) h1{
     display: flex;
     justify-content: start;
     align-items: center;
+    text-align: left;
 }
 main .Class_Section div .Class_Box div:nth-child(2) div:nth-child(1) p{
     font-size: smaller;

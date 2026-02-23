@@ -4,13 +4,517 @@
     box-sizing: border-box;
     font-family: Arial;
 }
+:root{
+    --font1: #2e42b4;
+    --font2: #3654f9;
+    --font3: white;
+    --font4: black;
+    --bg1: #2e42b4;
+    --bg2: #3654f9;
+    --bg3: black;
+    --bg4: #f8f8f8;
+    --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 body{
     max-width: 100vw;
-    max-height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: #f8f8f8;
+}
+header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+header .Logo_Name{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+header .Logo_Name div:nth-child(1){
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    gap: 5px;
+}
+header .Logo_Name div:nth-child(1) img{
+    width: 60px;
+    height: 60px;
+}
+header .Logo_Name div:nth-child(1) h1{
+    font-size: large;
+    font-weight: 600;
+    color: var(--bg1);
+}
+header .Logo_Name div:nth-child(2){
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+header .Logo_Name div:nth-child(2) a{
+    width: 35%;
+    height: 60%;
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+header .Logo_Name div:nth-child(2) a button{
+    border: none;
+    background-color: var(--bg1);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    color: white;
+    font-size: smaller;
+    font-weight: 200;
+}
+header .Logo_Name div:nth-child(2) a button:hover{
+    background-color: var(--bg2);
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+header nav{
+    width: 100%;
+    height: 50%;
+    background-color: var(--bg1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0px 20px;
+}
+header nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header nav ul li{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    font-weight: 300;
+}
+header nav ul li a:hover{
+    background-color: var(--bg2);
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+}
+main .Intro_Section{
+    width: 100%;
+    height: auto;
+    background-color: var(--bg1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--font3);
+    padding: 20px 20px;
+}
+main .Intro_Section div:nth-child(1){
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+}
+main .Intro_Section div:nth-child(1) img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+main .Intro_Section div:nth-child(2){
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+main .Intro_Section div:nth-child(2) h1{
+    height: auto;
+    font-size: x-large;
+    font-weight: 600;
+    text-align: center;
+}
+main .Intro_Section div:nth-child(2) p{
+    text-align: center;
+    font-size: medium;
+    font-weight: 400;
+}
+main .Ongoing_Class{
+    width: 100%;
+    height: auto;
+    background-color: var(--bg4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 20px;
+}
+main .Ongoing_Class h1{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* main .Ongoing_Class p{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+  main .Ongoing_Class div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+ main .Ongoing_Class div .PQAC_Rhema_Class{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+ }
+main .Ongoing_Class div .PQAC_Rhema_Class div:nth-child(1){
+    flex: 1;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+main .Ongoing_Class div .PQAC_Rhema_Class div:nth-child(1) img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+main .Ongoing_Class div .PQAC_Rhema_Class div:nth-child(2){
+    flex: 1;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+main .Ongoing_Class div .PQAC_Rhema_Class div:nth-child(2) h1{
+    height: auto;
+    font-size: x-large;
+    font-weight: 600;
+    text-align: center;
+}
+main .Ongoing_Class div .PQAC_Rhema_Class div:nth-child(2) p{
+    text-align: center;
+    font-size: medium;
+    font-weight: 400;
+}
+main .Ongoing_Class div .PQAC_Rhema_Class div:nth-child(2) div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+main .Ongoing_Class div .PQAC_Rhema_Class div:nth-child(2) div h2{
+    width: 100%;
+    height: auto;
+    font-size: medium;
+    font-weight: 600;
+    text-align: center;
+    /* background-color: #2e42b4; */
+    display: flex;
+    justify-content: left;
+}
+main .Ongoing_Class div .PQAC_Rhema_Class div:nth-child(2) div ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    /* align-items: center; */
+    padding: 0px 15px;
+    gap: 5px;
+}
+main .Ongoing_Class div .PQAC_Rhema_Class div:nth-child(2) div ul li{
+    font-size: medium;
+}
+main .Ongoing_Class div .PQAC_Rhema_Class div:nth-child(2) a{
+    width: 50%;
+    height: 40px;
+}
+main .Ongoing_Class div .PQAC_Rhema_Class div:nth-child(2) button{
+    border: none;
+    border-radius: 20px;
+    background-color: var(--bg1);
+    width: 100%;
+    height: 100%;
+    color: var(--font3);
+    font-size: small;
+}
+ main .Ongoing_Class div .Second_Class{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+main .Ongoing_Class div .Second_Class div:nth-child(1){
+    flex: 1;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+main .Ongoing_Class div .Second_Class div:nth-child(1) img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+main .Ongoing_Class div .Second_Class div:nth-child(2){
+    flex: 1;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+main .Ongoing_Class div .Second_Class div:nth-child(2) h1{
+    height: auto;
+    font-size: x-large;
+    font-weight: 600;
+    text-align: center;
+}
+main .Ongoing_Class div .Second_Class div:nth-child(2) p{
+    text-align: center;
+    font-size: medium;
+    font-weight: 400;
+}
+main .Ongoing_Class div .Second_Class div:nth-child(2) div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+main .Ongoing_Class div .Second_Class div:nth-child(2) div h2{
+    width: 100%;
+    height: auto;
+    font-size: medium;
+    font-weight: 600;
+    text-align: center;
+    /* background-color: #2e42b4; */
+    display: flex;
+    justify-content: left;
+}
+main .Ongoing_Class div .Second_Class div:nth-child(2) div ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    /* align-items: center; */
+    padding: 0px 15px;
+    gap: 5px;
+}
+main .Ongoing_Class div .Second_Class div:nth-child(2) div ul li{
+    font-size: medium;
+}
+main .Ongoing_Class div .Second_Class div:nth-child(2) a{
+    width: 50%;
+    height: 40px;
+}
+main .Ongoing_Class div .Second_Class div:nth-child(2) button{
+    border: none;
+    border-radius: 20px;
+    background-color: var(--bg1);
+    width: 100%;
+    height: 100%;
+    color: var(--font3);
+    font-size: small;
+}
+main .Upcoming_Class{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+main .Upcoming_Class h1{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    width: 100%;
+    height: 12vh;
+    background-color: var(--bg3);
+    color: var(--font3);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 10px; */
+    padding: 10px 20px;
+}
+footer div:nth-child(1){
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+footer div:nth-child(1) a{
+    width: 30%;
+    height: 60%;
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+footer div:nth-child(1) a button:hover{
+    cursor: pointer;
+    background-color: inherit;
+    transition: all ease-in-out 0.4s;
+    border: 1px solid var(--bg4);
+    color: var(--font3);
+}
+footer div:nth-child(1) a button{
+    border: none;
+    background-color: var(--bg4);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    color: var(--font4);
+    font-size: smaller;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div:nth-child(2){
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 3px;
+}
+footer div:nth-child(2) p{
+    font-size: x-small;
+    font-weight: 400;
+}
+@media screen and (max-width: 1000px){
+    header{
+        height: 32vh;
+    }
+    header .Logo_Name{
+        height: 35%;
+    }
+    header .Logo_Name div:nth-child(1){
+        justify-content: center;
+        align-items: center;
+    }
+    header .Logo_Name div:nth-child(2){
+        display: none;
+    }
+    header nav, header nav ul{
+        height: 65%;
+    }
+    header nav ul{
+        flex-wrap: wrap;
+    }
+    header nav ul li{
+        width: 30%;
+        height: 30%;
+    }
+    header nav ul li a:hover{
+        height: 100%;
+    }
+    main .Intro_Section{
+        flex-direction: column;
+    }
+    main .Ongoing_Class div .PQAC_Rhema_Class{
+        flex-direction: column;
+    }
+    main .Ongoing_Class div .Second_Class{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+        height: 30vh;
+        align-items: start;
+    }
+    footer div:nth-child(1), footer div:nth-child(1) a{
+        width: 100%;
+    }
 }
